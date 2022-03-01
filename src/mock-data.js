@@ -1,7 +1,188 @@
-let mockAreas = [{
+let mockAreas = [
+  {
+    id: 4,
+    name: "Southern Utah",
+    city: "Hurricane",
+    image: 'canyon.jpg',
+    activities: [{
+      name: 'hiking',
+      image: 'bridge.jpg',
+      items: [{
+        name: 'hiking boots',
+        have: false,
+        show: true,
+      },
+      {
+        name: 'water bottles',
+        have: false,
+        show: true,
+      },
+      {
+        name: 'trail mix',
+        have: false,
+        show: true,
+      },
+      {
+        name: 'backpack',
+        have: false,
+        show: true,
+      },
+      {
+        name: 'sunglasses',
+        have: false,
+        show: true,
+      },
+      {
+        name: 'hat',
+        have: false,
+        show: true,
+      },
+      {
+        name: 'walking stick',
+        have: false,
+        show: true,
+      },]
+    },
+    {
+      name: 'star gazing',
+      image: 'stars.jpg',
+      items: [{
+        name: 'blanket',
+        have: false,
+        show: true,
+      },]
+    },
+    {
+      name: 'picnic',
+      image: 'picnic.jpg',
+      items: [{
+        name: 'blanket',
+        have: false,
+        show: true,
+      },
+      {
+        name: 'basket',
+        have: false,
+        show: true,
+      },]
+    },]
+  },
+  {
+  id: 5,
+  name: "Goblin Valley",
+  city: "Hanksville",
+  image: 'goblin-valley.jpg',
+  activities: [{
+    name: 'hiking',
+    image: 'bridge.jpg',
+    items: [{
+      name: 'hiking boots',
+      have: false,
+      show: true,
+    },
+    {
+      name: 'water bottles',
+      have: false,
+      show: true,
+    },
+    {
+      name: 'trail mix',
+      have: false,
+      show: true,
+    },
+    {
+      name: 'backpack',
+      have: false,
+      show: true,
+    },
+    {
+      name: 'sunglasses',
+      have: false,
+      show: true,
+    },
+    {
+      name: 'hat',
+      have: false,
+      show: true,
+    },
+    {
+      name: 'walking stick',
+      have: false,
+      show: true,
+    },]
+  },
+  {
+    name: 'star gazing',
+    image: 'stars.jpg',
+    items: [{
+      name: 'blanket',
+      have: false,
+      show: true,
+    },]
+  },
+  {
+    name: 'picnic',
+    image: 'picnic.jpg',
+    items: [{
+      name: 'blanket',
+      have: false,
+      show: true,
+    },
+    {
+      name: 'basket',
+      have: false,
+      show: true,
+    },]
+  },]
+},
+  {
+    id: 6,
+    name: "Zion National Park",
+    city: "Hurricane",
+    image: 'deer.jpg',
+    activities: [{
+      name: 'hiking',
+      image: 'bridge.jpg',
+      items: [{
+        name: 'hiking boots',
+        have: false,
+        show: true,
+      },
+      {
+        name: 'water bottles',
+        have: false,
+        show: true,
+      },
+      {
+        name: 'trail mix',
+        have: false,
+        show: true,
+      },
+      {
+        name: 'backpack',
+        have: false,
+        show: true,
+      },
+      {
+        name: 'sunglasses',
+        have: false,
+        show: true,
+      },
+      {
+        name: 'hat',
+        have: false,
+        show: true,
+      },
+      {
+        name: 'walking stick',
+        have: false,
+        show: true,
+      },]
+    },]
+  },
+  {
   id: 7,
   name: "Arches National Park",
-  price: "$5.62",
   city: "Moab",
   image: 'delicate-arch.jpg',
   activities: [{
@@ -39,6 +220,29 @@ let mockAreas = [{
     },
     {
       name: 'walking stick',
+      have: false,
+      show: true,
+    },]
+  },
+  {
+    name: 'star gazing',
+    image: 'stars.jpg',
+    items: [{
+      name: 'blanket',
+      have: false,
+      show: true,
+    },]
+  },
+  {
+    name: 'picnic',
+    image: 'picnic.jpg',
+    items: [{
+      name: 'blanket',
+      have: false,
+      show: true,
+    },
+    {
+      name: 'basket',
       have: false,
       show: true,
     },]
@@ -122,7 +326,6 @@ let mockAreas = [{
 {
   id: 9,
   name: "Provo Canyon",
-  price: "$5.62",
   city: "Provo",
   image: 'tree-river.jpg',
   activities: [{

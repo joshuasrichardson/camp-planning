@@ -1,22 +1,22 @@
 <template>
 <div class="preparation">
 	<PackingList :items="items" />
+	<NavContainer prevLink="Activities" nextLink="none" />
 </div>
 </template>
 
 <script>
 import PackingList from '../components/PackingList.vue'
+import NavContainer from '../components/NavContainer.vue'
 
 export default {
 	name: 'Preparation',
 	components: {
 		PackingList,
+		NavContainer,
 	},
 	computed: {
 		items() {
-			// let activities = this.$root.$data.activitiesToDo;
-			// let itemArrays = activities.map(activity => activity.items);
-
 			return this.$root.$data.itemsToBring;
 		}
 	}

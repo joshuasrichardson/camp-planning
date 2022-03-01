@@ -5,17 +5,14 @@
 		<h2>Select the activities you would like to do at {{area.name}}.</h2>
 		<ActivityList :activities="area.activities" />
 	</div>
-	<router-link :to="{ name: 'Preparation'}">
-		<div class="next">
-			Next
-		</div>
-	</router-link>
+	<NavContainer prevLink="Campsites" nextLink="Preparation" />
 </div>
 </template>
 
 <script>
 import CampingArea from '../components/CampingArea.vue'
 import ActivityList from '../components/ActivityList.vue'
+import NavContainer from '../components/NavContainer.vue'
 
 export default {
 	name: 'Activities',
@@ -25,6 +22,7 @@ export default {
 	components: {
 		CampingArea,
 		ActivityList,
+		NavContainer,
 	},
 	computed: {
 		areas() {

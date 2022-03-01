@@ -1,27 +1,27 @@
 <template>
 <div id="app">
-	<div id="nav">
-		<router-link to="/">Home</router-link> >
-		<router-link to="/campsites">Campsites</router-link> >
-		<router-link to="/activities">Activities</router-link> >
-		<router-link to="/preparation">Preparation</router-link>
+	<div class="page">
+		<router-view />
 	</div>
-	<router-view />
 	<footer>
-		<p>
-			<a href="#">Github Repository</a>
-		</p>
+		<a href="https://github.com/joshuasrichardson/camp-planning">Github Repository</a>
 	</footer>
 </div>
 </template>
 
 <style>
+* {
+	margin: 0;
+	padding: 0;
+}
+
 #app {
 	font-family: Avenir, Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-align: center;
 	color: #2c3e50;
+	min-height: 100%;
 }
 
 #nav {
@@ -46,14 +46,16 @@ img {
 h1,
 h2 {
 	padding: 10px;
+	margin: 10px;
+	box-sizing: border-box;
 }
 
 body {
 	background-color: #D3B88C;
+	min-height: 100vh;
 }
 
 .isSelected {
-	/* color: #F4F2F3; */
 	color: #9EBC9F;
 	background-color: #2c3e50;
 }
@@ -63,6 +65,19 @@ body {
 }
 
 .notSelected {
+	background-color: #9EBC9F;
+}
+
+.page {
+	min-height: calc(100vh - 50px);
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 50px;
 	background-color: #9EBC9F;
 }
 </style>

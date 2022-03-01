@@ -1,8 +1,8 @@
 <template>
 <div class="activityList">
-	<div v-for="activity in activities" :key="activity.id" @click="selectActivity(activity)">
+	<div class="activity" v-for="activity in activities" :key="activity.id" @click="selectActivity(activity)">
 		<div class="changeOnHover" :class="selected(activity) ? 'isSelected' : 'notSelected'">
-			<p>{{activity.name}}</p>
+			<h2>{{activity.name}}</h2>
 			<img :alt="activity.name" :src="require(`../assets/${activity.image}`)">
 		</div>
 	</div>
@@ -56,5 +56,17 @@ export default {
 <style scoped>
 img {
 	width: 200px;
+}
+
+.activityList {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.activity {
+	width: 250px;
+	margin: 10px;
 }
 </style>
